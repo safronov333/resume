@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>.header{border-bottom: 2px solid grey ;}
+    .card{background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px; ;}
+    .color{color:red;}</style>
+</head>
+<body>
+     <!--<aside></aside>служит для боковых меню  -->
+    <!--<header>-вместо<div>для лучшей семантики-->
+    <div id="header"class="header">
+        <h2>Site</h2>
+    </div>
+    <!--</header>-вместо<div>для лучшей семантики-->
+        <!--<nav> вместо <dav>для навигации для лучшей семантики-->
+    <div id="navigation">
+        <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+    </ul>
+    <!--</nav> вместо <dav>для навигации для лучшей семантики-->
+    </div>
+    <hr>
+    <!-- <section>им групперуют статьи -->
+        <!-- <article> вместо <div> для лучшей семантики и 
+            для тех которые повторяются-->
+    <div id="block1"class="card header">
+        <h3>Blck 1</h3>
+        <p>Lorem ipsum,<samp class="color"> dolor sit amet consectetur adipisicing elit.</samp> Fuga, quis?</p>
+    </div>
+    <!-- </article> вместо <div> для лучшей семантики и 
+            для тех которые повторяются-->
+            <!-- <article> вместо <div> для лучшей семантики и 
+            для тех которые повторяются-->
+    <div id="block2"class="card">
+        <h3>Blck 2</h3>
+        <p>Lorem ipsum,<div class="color">dolor sit amet consectetur adipisicing elit.</div>  Fuga, quis?</p>
+    </div>
+    <!-- </article> вместо <div> для лучшей семантики и 
+            для тех которые повторяются-->
+        <!-- </section>им групперуют статьи -->
+
+    <hr>
+    <!-- <footer>вместо <div>для лучшей семантики -->
+    <div id="footer">
+        <h4>Contact me</h4>
+     <ul>
+    <li>Instagram</li>
+    <li>Одноклассники</li>
+</ul>
+</div>
+    <!-- </footer>вместо <div>для лучшей семантики -->
+
+    
+</body>
+</html>
