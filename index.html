@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"content="oleg,cv,resume">
     <meta name="description"content="Это сайт-резюме Олега Сафронова">
+    <link rel="stylesheet" href="styles.css">
     <title>Oleg-Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="фото.jpeg" alt="Олег Сафронов">
+    <div class="container">
+    <div class="info"> 
+    <img src="фото.jpeg " alt="Олег Сафронов"class="фото">
+    <div class="info-text">
     <h1>Олег Сафронов</h1>
    <p><strong> Я хочу</strong> научится создавать сайты и надеюсь это мне понравится.</p> 
    <p> В этом году <em>я буду </em> участвовать в полумарафоне</p>
@@ -19,21 +24,30 @@
    <a href="https://www.instagram.com/"target="_blank">Instagram</a>
    :
    <a href="https://ok.ru/"target="_blank">Одноклассники<a>
+</div>
+</div>
+
+<div class="card bg-green">
     <h1>Мои хобби</h1>
-    <ul><ol>
+
+    <ol class="list">
         <li> Книги</li>
         <li>Бассейн</li>
         <li> Прогулки по лесу</li>
-    </ol></ul>
+    </ol>
+</div>
+<div class="card bg-red">
     <h2>Опыт работы</h2>
-    <table>
-        <thead>
+    <table class="table">
+        <!--<thead>
             <tbody>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
+            </thead>-->
+            <tbody>
             <tr>           
             <th>Комб. пищ. прод.</th>
             <th>сварщик</th>
@@ -48,28 +62,43 @@
             <th>Торговая база</th>
             <th>Слесарь</th>
             <th>2017-2023</th>
-        </tr>       
+        </tr> 
+    </tbody>
+    </div>      
 <br>
         </tbody>
         </thead>
         </table>
-        <h2>Связаться со мной</h2>
-<form action="/">
-<div>
-    <label for="email">Ваш имя:</label>
-    <input type="email"id="email"
+        <div class="card bg-yellow">
+        
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-row">
+<div class="form-group">
+    <label for="name">Ваш имя:</label>
+    <input type="text"id="name"
     placeholder="Введите имя">
 </div>
-<div>
-    <label for="message">Ваш сообщение:</label>
-    <br>
-    <textarea id="message" cols="20" rows="5"placeholder="Введите сообщение..."></textarea>    
+<div class="form-group">
+    <label for="email">Ваш email:</label>
+    <input type="email"id="email"
+    placeholder="Введите email">
 </div>
-<input type="submit"value="Отправить">
+</div>
+<div class="form-group">    
+    <label for="message">Ваше сообщение:</label>   
+    <textarea id="message" cols="20" rows="5"placeholder="Введите сообщение..."></textarea>
+    <br> 
+</div>
+</div>
+<div class="card">
+<input class="btn" type="submit"value="Отправить">
 </form>
+</div>
 <br>
 <br>
 <br>
 <br>
+</div>
 </body> 
 </html>
